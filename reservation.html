@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservation - Fine Dine Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Fine Dine Experience</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservation.html" class="active">Reservation</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <h1 style="text-align:center; margin-top:2rem; color:#FFD700;">Book a Table</h1>
+
+  <form class="reservation-form" action="#" method="POST" aria-label="Reservation Form">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required placeholder="+1234567890" />
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" required />
+
+    <label for="guests">Number of Guests</label>
+    <select id="guests" name="guests" required>
+      <option value="" disabled selected>Select number</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5+">5+</option>
+    </select>
+
+    <button type="submit" aria-label="Submit Reservation">Reserve Now</button>
+  </form>
+
+  <footer class="social-footer" aria-label="Social Media Links">
+    <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i><span class="sr-only">Instagram</span></a>
+    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i><span class="sr-only">Facebook</span></a>
+    <a href="#" target="_blank" title="X Twitter"><i class="fab fa-x-twitter"></i><span class="sr-only">Twitter</span></a>
+  </footer>
+
+</body>
+</html>
